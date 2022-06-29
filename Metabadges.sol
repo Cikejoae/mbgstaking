@@ -2,13 +2,6 @@
 pragma experimental ABIEncoderV2;
 pragma solidity 0.8.4;
 
-import "./ERC721Namable.sol";
-import "./libraries/SafeMath.sol";
-import "./interfaces/IERC1155.sol";
-import "./Ownable.sol";
-import "./libraries/Strings.sol";
-import "./RandomlyAssigned.sol";
-
 contract MetaBadge is ERC721Namable, Ownable, RandomlyAssigned {
     using SafeMath for uint256;
     using Strings for uint256;
