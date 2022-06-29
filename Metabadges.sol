@@ -1,7 +1,6 @@
 // SPDX-License-Identifier: MIT
 pragma solidity 0.8.4;
 
-import "@openzeppelin/contracts/utils/Context.sol";
 import "@openzeppelin/contracts/access/Ownable.sol";
 
 
@@ -968,9 +967,6 @@ library Address {
 
 pragma solidity 0.8.4;
 
-import "./IERC721.sol";
-import "../libraries/Strings.sol";
-
 /**
  * @title ERC-721 Non-Fungible Token Standard, optional metadata extension
  * @dev See https://eips.ethereum.org/EIPS/eip-721
@@ -996,9 +992,6 @@ interface IERC721Metadata is IERC721 {
 
 pragma solidity 0.8.4;
 
-import "./IERC721.sol";
-import "../libraries/Strings.sol";
-
 /**
  * @title ERC-721 Non-Fungible Token Standard, optional metadata extension
  * @dev See https://eips.ethereum.org/EIPS/eip-721
@@ -1023,8 +1016,6 @@ interface IERC721Metadata is IERC721 {
 // SPDX-License-Identifier: MIT
 
 pragma solidity 0.8.4;
-
-import "./IERC721.sol";
 
 /**
  * @title ERC-721 Non-Fungible Token Standard, optional enumeration extension
@@ -1053,7 +1044,6 @@ interface IERC721Enumerable is IERC721 {
 
 pragma solidity 0.8.4;
 
-import "./IERC165.sol";
 
 /**
  * @dev Required interface of an ERC721 compliant contract.
@@ -1205,8 +1195,6 @@ interface IERC165 {
 // SPDX-License-Identifier: MIT
 
 pragma solidity 0.8.4;
-
-import "./IERC165.sol";
 
 /**
  * @dev Required interface of an ERC1155 compliant contract, as defined in the
