@@ -1421,8 +1421,6 @@ abstract contract WithLimitedSupply {
 // SPDX-License-Identifier: MIT
 pragma solidity 0.8.4;
 
-import "./WithLimitedSupply.sol";
-
 /// @author 1001.digital
 /// @title Randomly assign tokenIDs from a given set of tokens.
 abstract contract RandomlyAssigned is WithLimitedSupply {
@@ -1517,8 +1515,6 @@ abstract contract RandomlyAssigned is WithLimitedSupply {
 
 pragma solidity 0.8.4;
 
-import "./Context.sol";
-
 
 /**
  * @dev Contract module which provides a basic access control mechanism, where
@@ -1585,8 +1581,6 @@ contract Ownable is Context {
 }
 // SPDX-License-Identifier: MIT
 pragma solidity 0.8.4;
-
-import "./ERC721.sol";
 
 
 contract ERC721Namable is ERC721 {
@@ -1700,18 +1694,6 @@ contract ERC721Namable is ERC721 {
 // SPDX-License-Identifier: MIT
 
 pragma solidity 0.8.4;
-
-import "./Context.sol";
-import "./ERC165.sol";
-import "./interfaces/IERC721.sol";
-import "./interfaces/IERC721Metadata.sol";
-import "./interfaces/IERC721Enumerable.sol";
-import "./interfaces/IERC721Receiver.sol";
-import "./libraries/SafeMath.sol";
-import "./libraries/Address.sol";
-import "./libraries/EnumerableSet.sol";
-import "./libraries/EnumerableMap.sol";
-import "./libraries/Strings.sol";
 
 /**
  * @title ERC721 Non-Fungible Token Standard basic implementation
@@ -2198,8 +2180,6 @@ contract ERC721 is Context, ERC165, IERC721, IERC721Metadata, IERC721Enumerable 
 // SPDX-License-Identifier: MIT
 
 pragma solidity 0.8.4;
-
-import "./interfaces/IERC165.sol";
 
 /**
  * @dev Implementation of the {IERC165} interface.
