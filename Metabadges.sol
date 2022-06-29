@@ -1,6 +1,10 @@
 // SPDX-License-Identifier: MIT
 pragma solidity 0.8.4;
 
+import "@openzeppelin/contracts/utils/Context.sol";
+import "@openzeppelin/contracts/access/Ownable.sol";
+
+
 contract MetaBadge is ERC721Namable, Ownable, RandomlyAssigned {
     using SafeMath for uint256;
     using Strings for uint256;
